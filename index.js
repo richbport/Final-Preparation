@@ -2,7 +2,8 @@
 // API 2: "https://jsonplaceholder.typicode.com/posts?userId=:id"
 
 async function main() {
-    console.log(await (await fetch("https://jsonplaceholder.typicode.com/users")).json());
+    const users = await fetch("https://jsonplaceholder.typicode.com/users")
+    console.log(await ().json());
 }
 
 main();
