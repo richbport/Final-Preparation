@@ -9,7 +9,7 @@ async function main() {
 
   console.log(postsData);
 
-  postsData.map(
+  postListEl.innerHTML = postsData.map(
     (post) =>
       `<div class="post">
         <div class="post__title">
@@ -19,7 +19,7 @@ async function main() {
           Post Body
         </p>
     </div>`
-  );
+  ).join("");
 }
 
 main();
