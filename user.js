@@ -1,7 +1,7 @@
 const postListEl = document.querySelector('.post-list');
 
-function onSearchChange() {
-  console.log("onSearchChange()")
+function onSearchChange(event) {
+  console.log(event.target.value)
 }
 
 async function main() {
